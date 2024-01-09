@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Table</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="wrapper">
+                <div class="answerInput" id="answerBox">
+                    <div id="answerData">0</div>
+                </div>
+                <div class="buttonWrapper">
+                    <div class="buttonContainer">
+                        <button class="formBox" onclick="clearAll()">AC</button>
+                        <button class="formBox" onclick="deleteLastvalue()">Del</button>
+                        <button class="formBox" onclick="updateSignScreen('%')">%</button>
+                        <button class="formSection" onclick="updateSignScreen('/')">/</button>
+                    </div>
+                    <br />
+
+
+                    <div class="buttonContainer">
+                        <button class="form" onclick="updateScreen('7')">7</button>
+                        <button class="form" onclick="updateScreen('8')">8</button>
+                        <button class="form" onclick="updateScreen('9')">9</button>
+                        <button class="formSection" onclick="updateSignScreen('*')">*</button>
+                    </div>
+                    <br />
+
+
+                    <div class="buttonContainer">
+                        <button class="form" onclick="updateScreen('4')">4</button>
+                        <button class="form" onclick="updateScreen('5')">5</button>
+                        <button class="form" onclick="updateScreen('6')">6</button>
+                        <button class="formSection" onclick="updateSignScreen('-')">-</button>
+                    </div>
+                    <br />
+                    <div class="buttonContainer">
+                        <button class="form" onclick="updateScreen('1')">1</button>
+                        <button class="form" onclick="updateScreen('2')">2</button>
+                        <button class="form" onclick="updateScreen('3')">3</button>
+                        <button class="formSection" onclick="updateSignScreen('+')">+</button>
+                    </div>
+                    <br />
+                    <div class="buttonContainer">
+                        <button class="section" onclick="updateScreen('0')">0</button>
+                        <button class="form" onclick="updateScreen('.')">.</button>
+                        <button class="formSection" onclick="evaluateAnswer()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

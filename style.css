@@ -1,0 +1,102 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    background:rgb(18, 16, 32);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.wrapper{
+    border: thin solid white;
+    width: 250px;
+    border-radius: 20px;
+    background: black;
+    height: 500px;
+    padding: 10px;
+}
+
+.answerInput{
+    height: 100px;
+    border: thin solid white;
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+
+}
+
+.answerInput div{
+    position: relative;
+    text-align: right;
+    overflow: hidden;
+    font-weight:bold ;
+    color: white;
+    font-size: xx-large;
+    margin-right: 5px;
+}
+.buttonWrapper{
+    margin: 20px 0px;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section {
+    border-radius: 40px;
+
+}
+.formBox{
+    background: #A0A0A0;
+    color: black;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    outline: 0px;
+    border: thin solid black;
+    cursor: pointer;
+
+}
+
+.form {
+    background: rgb(44, 44, 44);
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    outline: 0px;
+    border: thin solid black;
+    
+}
+
+.formSection {
+    background: #F69906;
+    color: white;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    outline: 0px;
+    border: thin solid black;
+    cursor: pointer;
+    
+}
+
+.section {
+    background: rgb(48, 47, 47);
+    color: white;
+    border-radius: 20px;
+    height: 60px;
+    width: 125px;
+    font-weight: bold;
+    outline: 0px;
+    border: thin solid black;
+    cursor: pointer;
+
+}
+

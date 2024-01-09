@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Plan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assect/fontawesome6.4/css/all.css">
+    <script src="./assect/javercript/script1.js" defer></script>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        #container {
+            width: 95%;
+            max-width: 600px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+
+        table,
+        th,
+        td {
+            border-bottom: 2px solid black;
+            border-collapse: collapse;
+            /* border-style: groove; */
+            padding: 10px;
+            /* box-shadow: 2px 3px 5px ghostwhite, 3px 5px 8px gray, 4px 7px 9px #a9a9a9, 5px 7px 12px #676666; */
+        }
+
+        th {
+            background: darkgray;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background: #77ac89;
+        }
+
+        tr:nth-child(odd) {
+            background: #d2c5c5;
+        }
+
+        tr a:link {
+            text-decoration: none;
+            text-align: center;
+            color: #508a4961;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        tr a:active{
+            color: aquamarine;
+        }
+        tr,td{
+            text-align: center;
+        }
+
+        #loader {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-top: 20px;
+            color: #0f3698;
+        }
+    </style>
+</head>
+
+<body onload="fetchAllPostsFromApi()">
+    <div class="wrapper">
+        <div id="container">
+            <h2>Table</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Title</th>
+                        <th>Manage</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="loader"><i class="fa fa-spinner fa-spin"></i>Loading ...</div>
+
+</body>
+
+</html>

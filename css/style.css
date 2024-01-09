@@ -1,0 +1,180 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px
+}
+
+.searchBox {
+    text-align: center;
+    background: #67887b;
+    border: thin solid black;
+    padding: 10px;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    z-index: 100;
+    margin: auto;
+}
+
+#appTitle {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.container {
+    margin-top: -10px;
+}
+
+#searchInput {
+    width: 350px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+}
+
+#searchInput:focus {
+    /* width: 500px; */
+    border-color: blue;
+    color: #e8dddd;
+}
+
+.infoData {
+    padding: 130px 0px 0px 15px;
+    background: #272828e0;
+    color: #e8dddd;
+}
+
+.button {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #67887b;
+    font-weight: bolder;
+    border: none;
+    background: #e8dddd;
+}
+
+.button:hover {
+    color: white;
+    background: #67887b;
+    box-shadow: 2px 3px 4px #67887b, 3px 4px 8px #67887b, 4px 5px 14px #67887b;
+}
+
+.button:active {
+    color: red;
+}
+
+.button span {
+    position: absolute;
+    display: block;
+    z-index: 100;
+}
+
+.first-line {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #67887b);
+    animation: first-line 1s linear infinite .1s;
+}
+
+@keyframes first-line {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.second-line {
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #67887b);
+    animation: second-line 1s linear infinite .4s;
+}
+
+@keyframes second-line {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.third-line {
+    right: -100%;
+    bottom: 0%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #67887b);
+    animation: third-line 1s linear infinite .6s;
+}
+
+@keyframes third-line {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.fourth-line {
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #67887b);
+    animation: fourth-line 1s linear infinite .9s;
+}
+
+@keyframes fourth-line {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.flag {
+    display: flex;
+    /* justify-content: space-between; */
+    position: fixed;
+    right: 10px;
+    z-index: 1;
+}
+
+.flag-two {
+    position: relative;
+    right: 20px;
+}
+
+@media screen and(max-width:600px) {
+    #searchInput {
+        width: 500px;
+    }
+
+    .button {
+        display: none;
+    }
+}

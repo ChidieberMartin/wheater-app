@@ -1,0 +1,372 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    border: thin solid #454242;
+    padding: 10px;
+    background: #48484A;
+}
+
+
+.myNavigator {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.closebtn {
+    display: none;
+}
+
+.listHolder {
+    position: relative;
+    bottom: 17px;
+    left: 50px;
+}
+
+.listHolder-one {
+    position: relative;
+    bottom: 17px;
+    left: 50px;
+    color: white;
+}
+
+.listHolder-two {
+    position: relative;
+    bottom: 17px;
+    left: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.listHolder-two:focus {
+    border-bottom: thin solid white;
+    color: white;
+}
+
+.myNavigator a {
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.myNavigator a:hover {
+    background: #c3c3cd;
+    border-radius: 5px;
+}
+
+.myNav {
+    display: none;
+}
+
+#icon {
+    display: none;
+}
+
+h1 {
+    position: absolute;
+    left: 50px;
+    color: #E96E50;
+}
+
+.inputContainer {
+    border: thin solid #E57E50;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background: #E57E50;
+    position: relative;
+    top: 90px;
+}
+
+.inputCover {
+    padding-top: 5px;
+}
+
+#searchInput {
+    width: 300px;
+    border-radius: 45px 0px 0px 45px;
+    padding: 12px 24px;
+    font-size: 18px;
+    box-shadow: none;
+    text-align: center;
+    border: 2px solid #F04C2F;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+
+#control {
+    height: 50px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -4px;
+    padding: 18px;
+    width: 100px;
+    cursor: progress;
+    border: thin solid #C1593F;
+    background: #f06a48;
+}
+
+#control:hover {
+    background: #C1593F;
+}
+
+.seachedResult {
+    position: relative;
+    left: 120px;
+    font-weight: bold;
+}
+
+.weatherImg {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.cityLocation {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.Condition {
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+    color: #6e1cba;
+}
+
+.textHolder {
+    position: relative;
+    top: 60px;
+    left: 20px;
+    right: 0px;
+}
+
+footer {
+    background: #F2F2F2;
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 120px;
+}
+
+.wrapper {
+    color: #000;
+    display: grid;
+    grid-template-columns: auto auto 40%;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.wrapper a {
+    color: #000;
+    text-decoration: none;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+    color: #1150cd
+}
+
+.wrapper ul {
+    list-style-type: none;
+}
+
+h3 {
+    position: relative;
+    top: 14px;
+    left: 40px;
+    font-size: 20px;
+}
+
+
+.holder {
+    line-height: 20pt;
+}
+
+
+
+.sector {
+    position: relative;
+    left: 30px;
+}
+
+.sector span {
+    display: flex;
+}
+
+#load {
+    position: relative;
+    top: 20px;
+}
+
+.imgHolder {
+    display: inline;
+}
+
+.imgHolder-two {
+    position: relative;
+    top: 11px;
+}
+
+#img {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 22%;
+    position: relative;
+    bottom: 40px;
+}
+
+.fontawesome {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    position: relative;
+    bottom: 110px;
+}
+
+.fontawesome span {
+    padding: 46px;
+    font-size: 20px;
+}
+
+.fontawesome span:hover {
+    opacity: 0.4;
+}
+
+@media screen and (max-width:600px) {
+
+    .myNav {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #454242;
+        overflow-y: hidden;
+        transition: 0.9s;
+    }
+
+    .myNav-content {
+        position: relative;
+        width: 100%;
+        top: 25px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .myNav a {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        padding: 8px;
+        transition: 0.3s;
+    }
+
+    .myNav a:hover,
+    .myNav a:focus {
+        color: #f1f1f1;
+    }
+
+    .myNav.closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .listHolder-one {
+        display: none;
+    }
+
+    .listHolder-two {
+        display: none;
+    }
+
+    .listHolder {
+        display: none;
+    }
+
+    #img1 {
+        position: relative;
+        right: 0px;
+    }
+
+    #icon {
+        display: inline-flex;
+        justify-content: flex-end;
+        font-size: 30px;
+        padding-left: 72%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 2vw;
+    }
+
+    ul {
+        font-size: 0.5vw;
+    }
+
+    #searchInput {
+        width: 100%px;
+        border-radius: 15px;
+        position: relative;
+        left: 71px;
+        bottom: 27px;
+    }
+
+    #control {
+        width: 50%;
+        border-radius: 10px;
+        position: relative;
+        top: 29px;
+        right: 144px;
+    }
+
+    .textHolder {
+        font-size: 12px;
+        position: relative;
+        left: 10px;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        left: 20px;
+    }
+
+    #img {
+        display: none;
+        position: relative;
+        left: 85px;
+    }
+
+    .fontawesome span {
+        position: relative;
+        top: 70px;
+        right: 10px;
+    }
+}

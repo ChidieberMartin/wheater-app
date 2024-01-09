@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Posts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assect/fontawesome6.4/css/all.css">
+    <script src="./assect/javercript/script1.js" defer></script>
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        li {
+            line-height: 30px;
+        }
+
+        #commentName {
+            font-size: larger;
+            border-bottom: 3px solid #d7d8de;
+            border-radius: 10px;
+            background: #fafafa;
+            width: 45%;
+            line-height: 50px;
+            padding: 15px;
+        }
+
+        .fontawesome{
+            font-size: larger;
+            color: #01081d;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body onload="fetchOnePostByIdFromApi()">
+    <h2>Posts section</h2>
+    <div id="postBodyContainer">
+        <div id="postTitle"><b>Title :</b>
+            <span id="postTitleContent"></span>
+        </div>
+        <br>
+        <div id="postBody"><b>Body:</b>
+            <span id="postBodyContent"></span>
+        </div>
+        <br>
+        <div id="postId"><b>ID:</b>
+            <span id="postIdContent"></span>
+        </div>
+        <br>
+        <div id="postBody"><b>User ID:</b>
+            <span id="postUserIdContent"></span>
+        </div>
+    </div>
+    <br>
+
+    <div id="postCommentContainer">
+        <h2>Comment section</h2>
+        <ul>
+            <li id="commentName">
+                <span  class="fontawesome"><i class="fa fa-user"></i></span>
+                <span><b>Paul: </b></span>
+                <br />
+                <span id="commentNameContent0"></span>(
+                <span id="commentEmailContent0"></span>)
+            </li>
+            <li id="commentName">
+                <span  class="fontawesome"><i class="fa fa-user"></i></span><span><b>Joy: </b></span>
+                <br />
+                <span id="commentNameContent1"></span>(
+                <span id="commentEmailContent1"></span>)
+            </li>
+            <li id="commentName">
+                <span  class="fontawesome"><i class="fa fa-user"></i></span><span><b>John: </b></span>
+                <br />
+                <span id="commentNameContent2"></span>(
+                <span id="commentEmailContent2"></span>)
+            </li>
+            <li id="commentName">
+                <span  class="fontawesome"><i class="fa fa-user"></i></span><span><b>Ruth: </b></span>
+                <br />
+                <span id="commentNameContent3"></span>(
+                <span id="commentEmailContent3"></span>)
+            </li>
+            <li id="commentName">
+                <span  class="fontawesome"><i class="fa fa-user"></i></span><span><b>Samuel: </b></span>
+                <br />
+                <span id="commentNameContent4"></span>(
+                <span id="commentEmailContent4"></span>)
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
